@@ -1,0 +1,40 @@
+Vm to Vm
+1)Make a new virtual machine Vm1 (type linux ,ubantu 64-bit) next 
+https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
+
+2)use existing select the vmdk file from download 
+3)same for vm2
+4)we need to form network
+file->prefernces ->network->setup it
+5)Go to the settings of both the vm ->network -> NAt network
+6)Open the vms both 
+login : vagrant  (vm1,vm2)
+password vagrant (vm1,vm2)
+
+ifconfig  (vm1,vm2)
+
+sudo apt  install net-tools (vm1)
+ 
+ping 172.168.2.5(changes from system to system)   (vm1)
+
+cntrl c stop (vm1)
+
+ls  (vm1,vm2)
+
+touch  demo.txt (vm1)
+
+ls   (vm1,vm2)
+
+nano demo.txt	(vm1)
+
+"Hey how are you "
+cntorl x ,Y and enter   (vm1) 
+
+cat demo.txt   (vm1)
+
+scp demo.txt vagrant@172.168.2.5:/home/vagrant    (vm1)
+password:vagrant  (vm1)
+
+
+
+**Ip will be visible in inet*

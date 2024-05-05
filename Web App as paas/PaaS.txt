@@ -1,0 +1,7 @@
+1. Login AWS
+2. Search "Amplify"
+3. Click create new app
+4. Click "Github" press next
+5. Add repository "madbunny253/Cloudpass" press next
+6. Add app name press next
+7. Click "Save and deploy"

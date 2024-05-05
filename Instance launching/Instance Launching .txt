@@ -1,0 +1,22 @@
+Instance Launching 
+
+1)Login AWS
+2)Search  EC2
+3)Launch Instance 
+4) AMI choose - Ubantu 18.04 choose instance type - t2.micro
+5)same next
+6)add storage :next
+7)Add tags : production vm
+8)security  groups: add rule->https
+9)choose a existing key pair->Launch
+
+/////////////////////////////
+1)Login GCP
+2)Use existing project with atttached billing accounct
+3)compute engine ->vm instance 
+4)create instances
+(allows http andd https)
+baki khi karycha nahi
+5)launch the instance  
+////////////////////////////
+

@@ -1,0 +1,12 @@
+Cloud sim perquisites 
+jar files 
+scheduling algorithms
+
+
+1)create new java project (sjfscheduler)
+2)in src we will create the package name Custom_Package
+3)in custom package show in system explorer copy the algo files and paste it
+4)Rename all the files by Custom_Package
+5) now import the jar file 
+click on sjf ->build path-> config buildd path ->in libraries->add external JJar files
+6)click on sjf -> run as java application -> search sjf and done
