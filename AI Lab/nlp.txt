@@ -1,0 +1,63 @@
+!pip install nltk
+
+import nltk
+
+nltk.download("punkt")
+
+nltk.download("stopwords")
+
+from nltk import sent_tokenize, word_tokenize
+
+from nltk.corpus import stopwords
+
+stopwords = stopwords.words("english")
+
+sent = "I will walk 500 miles and I would walk 500 more, just to be the man who walks a thousand miles to fall down at your door".lower()
+
+sent
+
+words = word_tokenize(sent)
+
+print(words)
+
+sentences = sent_tokenize(sent)
+print(sentences)
+
+print(stopwords)
+
+for word in words:
+    if word in stopwords:
+        words.remove(word.lower())
+print(words)
+
+from nltk import PorterStemmer
+
+stemmer = PorterStemmer()
+
+print(words)
+
+stemmed_words = [stemmer.stem(word) for word in words]
+print(stemmed_words)
+
+from nltk.stem import SnowballStemmer
+
+from collections import Counter
+from nltk import pos_tag
+
+nltk.download('averaged_perceptron_tagger')
+
+count_dict = {}
+
+for word in stemmed_words:
+    if word in count_dict:
+        count_dict[word] += 1
+    else:
+        count_dict[word] = 1
+        
+print(count_dict)
+
+pos_tagged = pos_tag(stemmed_words)
+print(pos_tagged)
+
+count = Counter(tag for _ , tag in pos_tagged)
+print(count)
